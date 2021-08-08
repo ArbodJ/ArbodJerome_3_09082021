@@ -1,0 +1,231 @@
+body
+{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+header
+{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#generality
+{
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f3f3;
+}
+#title
+{
+  display: flex;
+  justify-content: center;
+}
+form /*MENU DE RECHERCHE*/
+{
+  width: 100%;
+  height: 80px;
+  border-top: #c8c8c8 5px solid;
+  background: #e7e7e7;
+  display: flex;
+  justify-content: center;
+}
+label
+{
+  margin: auto 0;
+}
+label a
+{
+  margin: auto 0;
+  text-decoration: none;
+  color: #000;
+}
+.fas.fa-map-marker-alt
+{
+  width: 30px;
+  height: 45px;
+  font-size: 37px;
+}
+input
+{
+  width: 10%;
+  background: #e7e7e7;
+  border: none;
+  height: 45px;
+  margin: auto 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+button
+{
+  height: 47px;
+  margin: auto 0;
+}
+#slogH/*SLOGAN*/
+{
+  margin: 75px 0 0 0;
+  font-size: 60px;
+}
+#slogP
+{
+  margin: 0 0 50px 0;
+  font-size: 35px; 
+}
+#slogA
+{
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 35px;
+  box-shadow: #99E2D0 1px 2px 4px;
+  margin-bottom: 75px;
+}
+#how /*SECTION MODE D'EMPLOI*/
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  }
+#how h1
+{
+  font-size: 35px;
+}
+#titleFunction
+{
+  text-align: center;
+}
+#read
+{
+  display: flex;
+  align-items: center;
+  flex: 1 39%;
+  justify-content: space-between;
+}
+.linkhow
+{
+  flex: 0 22%;
+  color: black;
+  text-decoration: none;
+}
+.list
+{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: #99E2D0 1px 2px 4px;
+}
+.number
+{
+  background: #9356DC;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 15px;
+  display: flex;
+  margin: 20px 20px 20px -13px;
+  justify-content: center;
+  align-items: center;
+}
+.list i
+{
+  font-size: 25px;
+}
+.list figcaption
+{
+  font-size: 25px;
+  margin-left: 25px;
+}
+main /*SECTION RESTAURANTS*/
+{
+  width: 100%;
+  margin: 70px auto;
+}
+/*#resto 
+{
+  width: 100%;
+  margin: 70px auto;
+}*/
+#resto h1
+{
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+}
+.photo
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgResto
+{
+  flex: 1 45%;
+  text-decoration: none;
+}
+.image
+{
+  background-color: #fff;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: #99E2D0 1px 2px 4px;
+}
+.image img
+{
+  flex: 1 42%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  
+}
+.description
+{
+  flex: 1 30%;
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.description i
+{
+  font-size: 70px;
+}
+footer /*SECTION FOOTER*/
+{
+  background: black;
+}
+#foot
+{
+  background: black;
+}
+#figFoot
+{
+  display: flex;
+  flex-direction: column;
+}
+#figFoot img
+{
+  width: 300px;
+  height: 80px;
+  margin: 15px 0;
+}
+#figcpt
+{
+  display: flex;
+  flex-direction: column;
+}
+#figcpt a
+{
+  text-decoration: none;
+  color: #fff;
+  margin: 5px 0;
+  width: 190px;
+}
