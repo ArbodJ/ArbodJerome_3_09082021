@@ -1,0 +1,98 @@
+body
+{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+header /*Entete de page*/
+{
+  display: flex;
+  margin-top: 15px;
+}
+#title
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#back
+{
+  width: 7%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#back i
+{
+  font-size: 40px;
+}
+#food
+{
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+}
+main /*Corps de page*/
+{
+  background: cyan;
+}
+#master
+{
+  display: flex;
+}
+#mainBlock
+{
+  background: pink;
+  margin: 0 auto;
+}
+figure #resto
+{
+  width: 1100px;
+  height: 600px;
+  margin: 0 auto;
+  border-bottom: #f3f3f3 15px solid;
+}
+#titreResto
+{
+  height: 75px;
+  background: #f3f3f3;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -75px;
+}
+
+
+
+
+footer /*SECTION FOOTER*/
+{
+  background: black;
+}
+#foot
+{
+  background: black;
+}
+#figFoot
+{
+  display: flex;
+  flex-direction: column;
+}
+#figFoot img
+{
+  width: 300px;
+  height: 80px;
+  margin: 15px 0;
+}
+#figcpt
+{
+  display: flex;
+  flex-direction: column;
+}
+#figcpt a
+{
+  text-decoration: none;
+  color: #fff;
+  margin: 5px 0;
+  width: 190px;
+}
