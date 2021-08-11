@@ -14,9 +14,14 @@ header /*Entete de page*/
   display: flex;
   align-items: center;
 }
+#title h1
+{
+  font-family: 'Shrikhand', cursive;
+  font-size: 100px;
+  margin: 0 35%;
+}
 #back
 {
-  width: 7%;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -35,18 +40,21 @@ header /*Entete de page*/
 }
 main /*Corps de page*/
 {
-  background: cyan;
+  display: flex;
 }
 #master
 {
   display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  background: #f3f3f3;
 }
 #mainBlock
 {
-  background: pink;
+  background: #f3f3f3;
   margin: 0 auto;
 }
-figure #resto
+figure #resto /*TITRE*/
 {
   width: 1100px;
   height: 600px;
@@ -55,16 +63,86 @@ figure #resto
 }
 #titreResto
 {
-  height: 75px;
+  height: 100px;
   background: #f3f3f3;
   border-radius: 25px 25px 0 0;
   position: relative;
   margin-top: -75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+#titreResto h1
+{
+  font-family: 'Shrikhand', cursive;
+  font-weight: 500;
+  font-size: 70px;
+  margin: 0;
+}
+#titreResto i
+{
+  font-size: 55px;
+}
+.titreMenu /*BLOCK MENU*/
+{
+  width: 95%;
+  margin: 0 auto;
 
-
-
-
+}
+.ssTitreMenu
+{
+  border-bottom: #99E2D0 1px solid;
+}
+.ssTitreMenu h3
+{
+  font-weight: 100;
+  padding-left: 10px;
+}
+.titrePlat
+{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.plat
+{
+  text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.prixPlat
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: -51px;
+  justify-content: flex-end;
+}
+#command
+{
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 20%;
+  padding: 15px 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 35px;
+  box-shadow: #99E2D0 1px 2px 4px;
+}
+#command a
+{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
 footer /*SECTION FOOTER*/
 {
   background: black;
@@ -72,27 +150,31 @@ footer /*SECTION FOOTER*/
 #foot
 {
   background: black;
+  height: 150px;
 }
 #figFoot
 {
   display: flex;
   flex-direction: column;
 }
-#figFoot img
+#figFoot p
 {
-  width: 300px;
-  height: 80px;
+  font-family: 'Shrikhand', cursive;
+  color: #fff;
+  font-size: 50px;
   margin: 15px 0;
+  text-align: center;
 }
 #figcpt
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 #figcpt a
 {
   text-decoration: none;
   color: #fff;
-  margin: 5px 0;
+  margin: 5px 25px;
   width: 190px;
 }

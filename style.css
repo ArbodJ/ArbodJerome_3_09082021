@@ -5,8 +5,6 @@ body
 }
 header
 {
-  width: 95%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +12,7 @@ header
 #generality
 {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +22,12 @@ header
 {
   display: flex;
   justify-content: center;
+}
+#title h1
+{
+  font-family: 'Shrikhand', cursive;
+  font-size: 100px;
+  margin: 0px auto;
 }
 form /*MENU DE RECHERCHE*/
 {
@@ -106,7 +110,7 @@ button
   display: flex;
   align-items: center;
   flex: 1 39%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .linkhow
 {
@@ -147,7 +151,7 @@ button
 main /*SECTION RESTAURANTS*/
 {
   width: 100%;
-  margin: 70px auto;
+  margin-top: 70px;
 }
 /*#resto 
 {
@@ -164,11 +168,18 @@ main /*SECTION RESTAURANTS*/
 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contentResto
+{
+  margin: 0px 0 55px 0px;
+  flex: 0 45%;
 }
 .imgResto
 {
-  flex: 1 45%;
+  flex: 0 100%;
   text-decoration: none;
+  flex-direction: column;
 }
 .image
 {
@@ -211,10 +222,11 @@ footer /*SECTION FOOTER*/
   display: flex;
   flex-direction: column;
 }
-#figFoot img
+#figFoot p
 {
-  width: 300px;
-  height: 80px;
+  font-family: 'Shrikhand', cursive;
+  color: #fff;
+  font-size: 50px;
   margin: 15px 0;
 }
 #figcpt
