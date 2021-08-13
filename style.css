@@ -26,15 +26,21 @@ header
 #title h1
 {
   font-family: 'Shrikhand', cursive;
-  font-size: 100px;
+  font-size: 10vw;
   margin: 0px auto;
 }
-form /*MENU DE RECHERCHE*/
+#search
 {
   width: 100%;
   height: 80px;
   border-top: #c8c8c8 5px solid;
   background: #e7e7e7;
+  display: flex;
+  justify-content: space-evenly;
+}
+form /*MENU DE RECHERCHE*/
+{
+  width: 37%;
   display: flex;
   justify-content: center;
 }
@@ -56,7 +62,7 @@ label a
 }
 input
 {
-  width: 10%;
+  width: 250px;
   background: #e7e7e7;
   border: none;
   height: 45px;
@@ -71,13 +77,15 @@ button
 }
 #slogH/*SLOGAN*/
 {
-  margin: 75px 0 0 0;
+  margin: 75px 50px 0 50px;
   font-size: 60px;
+  text-align: center;
 }
 #slogP
 {
-  margin: 0 0 50px 0;
+  margin: 0 40px 50px 40px;
   font-size: 35px; 
+  text-align: center;
 }
 #slogA
 {
@@ -105,16 +113,18 @@ button
 {
   text-align: center;
 }
-#read
+#read /*Block du MODE D'EMPLOI*/
 {
   display: flex;
   align-items: center;
-  flex: 1 39%;
+  /*flex: 1 39%;*/
   justify-content: space-around;
 }
-.linkhow
+.linkhow /*BOUTONS*/
 {
-  flex: 0 22%;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 22%;
   color: black;
   text-decoration: none;
 }
@@ -124,7 +134,18 @@ button
   display: flex;
   align-items: center;
   border-radius: 30px;
-  box-shadow: #99E2D0 1px 2px 4px;
+  box-shadow: #f0f0f0 1px 2px 9px;
+  transition: all 0.3s ease-out;
+}
+.list:hover
+{
+ background-color: #f8e9f4;
+ box-shadow: #d9d9d9 2px 3px 9px;
+ 
+}
+.list:hover i
+{
+  color: #9356DC;
 }
 .number
 {
@@ -146,7 +167,7 @@ button
 .list figcaption
 {
   font-size: 25px;
-  margin-left: 25px;
+  margin: 0 25px;
 }
 main /*SECTION RESTAURANTS*/
 {
@@ -203,11 +224,17 @@ main /*SECTION RESTAURANTS*/
   color: #000;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .description i
 {
   font-size: 70px;
+  font-weight: 100;
+  transition: color 0.6s ease-out;
+}
+.description .far:hover
+{
+  background-color: #FF79DA;
 }
 footer /*SECTION FOOTER*/
 {
@@ -240,4 +267,74 @@ footer /*SECTION FOOTER*/
   color: #fff;
   margin: 5px 0;
   width: 190px;
+}
+/*RESPONSIV*/
+@media (max-width: 1230px)
+{
+  #read/*MODE D'EMPLOI*/
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkhow
+  {
+    margin: 25px 0;
+    width: 90%;
+  }
+  .list
+  {
+    width: 55%;
+  }
+  #resto /*SECTION RESTO*/
+  {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #resto h1
+  {
+    justify-content: start;
+  }
+  .photo 
+  {
+    flex-direction: column;
+  }
+  .contentResto
+  {
+    height: 100px;
+    margin: 0;
+  }
+  .imgResto
+  {
+    height: 100px;
+  }
+  .image
+  {
+    flex-direction: column;
+    height: 280px;
+    margin: 25px 0;
+  }
+  .image img
+  {
+    height: 180px;
+    border-radius: 15px 15px 0 0;
+  }
+  .description
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .like
+  {
+    margin-right: 15px;
+  }
+  .description h3
+  {
+    padding-left: 15px;
+  }
+  .description p
+  {
+    padding-left: 15px;
+  }
 }
