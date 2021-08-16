@@ -53,22 +53,24 @@ main /*Corps de page*/
 }
 #mainBlock
 {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
   background: #f3f3f3;
   margin: 0 auto;
-  flex-direction: column;
 }
-figure #resto /*TITRE*/
+#resto /*TITRE*/
 {
   width: 100%;
+  height: 320px;
   margin: 0 auto;
   border-bottom: #f3f3f3 15px solid;
   object-fit: cover;
 }
 #titreResto
 {
-  height: 100px;
+  height: 130px;
   background: #f3f3f3;
   border-radius: 25px 25px 0 0;
   position: relative;
@@ -83,7 +85,7 @@ figure #resto /*TITRE*/
 {
   font-family: 'Shrikhand', cursive;
   font-weight: 500;
-  font-size: 7vw;
+  font-size: 6vw;
   margin: 0;
 }
 #titreResto i
@@ -190,12 +192,11 @@ footer /*SECTION FOOTER*/
 {
   #resto
   {
-    height: 400px;
+    height: 300px;
   }
   footer
   {
     height: 250px;
-    border: #FF79DA 1px solid;
   }
   #figFoot
   {
@@ -218,6 +219,6 @@ footer /*SECTION FOOTER*/
 {
   #resto
   {
-    height: 200px;
+    height: 220px;
   }
 }
