@@ -23,11 +23,9 @@ header
   display: flex;
   justify-content: center;
 }
-#title h1
+#title img
 {
-  font-family: 'Shrikhand', cursive;
-  font-size: 10vw;
-  margin: 0px auto;
+  margin: 20px 0;
 }
 #search
 {
@@ -97,6 +95,12 @@ button
   border-radius: 35px;
   box-shadow: #99E2D0 1px 2px 4px;
   margin-bottom: 75px;
+  transition: transform 0.5s ease-out;
+}
+#slogA:hover
+{
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: #85f3d7 1px 2px 4px;
 }
 #how /*SECTION MODE D'EMPLOI*/
 {
@@ -105,7 +109,7 @@ button
   flex-direction: column;
   margin-top: 50px;
   }
-#how h1
+#how h2
 {
   font-size: 35px;
 }
@@ -117,7 +121,6 @@ button
 {
   display: flex;
   align-items: center;
-  /*flex: 1 39%;*/
   justify-content: space-around;
 }
 .linkhow /*BOUTONS*/
@@ -179,7 +182,7 @@ main /*SECTION RESTAURANTS*/
   width: 100%;
   margin: 70px auto;
 }*/
-#resto h1
+#resto h2
 {
   display: flex;
   font-size: 35px;
@@ -239,10 +242,7 @@ main /*SECTION RESTAURANTS*/
 footer /*SECTION FOOTER*/
 {
   background: black;
-}
-#foot
-{
-  background: black;
+  height: auto;
 }
 #figFoot
 {
@@ -252,6 +252,7 @@ footer /*SECTION FOOTER*/
 #figFoot p
 {
   font-family: 'Shrikhand', cursive;
+  text-align: center;
   color: #fff;
   font-size: 50px;
   margin: 15px 0;
@@ -259,7 +260,9 @@ footer /*SECTION FOOTER*/
 #figcpt
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
 }
 #figcpt a
 {
@@ -281,9 +284,9 @@ footer /*SECTION FOOTER*/
     margin: 25px 0;
     width: 90%;
   }
-  .list
+  .list figcaption
   {
-    width: 55%;
+    font-size: 20px;
   }
   #resto /*SECTION RESTO*/
   {
@@ -325,9 +328,17 @@ footer /*SECTION FOOTER*/
     flex-direction: row;
     justify-content: space-between;
   }
+  .lieu
+  {
+    margin-left: 10px;
+  }
   .like
   {
-    margin-right: 15px;
+    margin-right: 60px;
+  }
+  .like i
+  {
+    font-size: 45px;
   }
   .description h3
   {
@@ -336,5 +347,28 @@ footer /*SECTION FOOTER*/
   .description p
   {
     padding-left: 15px;
+  }
+}
+@media (max-width: 911px)
+{
+  #foot
+  {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #figFoot p
+  {
+    text-align: start;
+  }
+  #figcpt
+  {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    margin: 0 0;
+  }
+  #figcpt a
+  {
+    margin: 10px 0;
   }
 }
