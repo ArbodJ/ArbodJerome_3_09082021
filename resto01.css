@@ -71,7 +71,7 @@ main /*Corps de page*/
 {
   height: 130px;
   background: #f3f3f3;
-  border-radius: 25px 25px 0 0;
+  border-radius: 45px 45px 0 0;
   position: relative;
   margin-top: -75px;
   padding-left: 30px;
@@ -155,6 +155,7 @@ main /*Corps de page*/
   flex-direction: row;
   align-items: flex-end;
 }
+
 #command
 {
   display: flex;
@@ -214,6 +215,7 @@ footer /*SECTION FOOTER*/
   #titreResto h1
   {
     font-size: 3.5em;
+    margin-left: -13px;
   }
 }
 @media (max-width: 1000px)
@@ -259,8 +261,44 @@ footer /*SECTION FOOTER*/
 }
 @media (max-width: 750px)
 {
+  #titreResto
+  {
+    height: 115px;
+    margin-top: -68px;
+    border-radius: 45px 45px 0 0;
+  }
+  #titreResto h1
+  {
+    font-size: 2.2em;
+    margin-left: -20px;
+  }
+  #titreResto i
+  {
+    font-size: 35px;
+  }
   #resto
   {
     height: 220px;
+  }
+}
+@media (max-width: 500px)
+{
+  #title img
+  {
+    background: aqua;
+    width: 300px;
+  }
+  #title i
+  {
+    font-size: 22px;
+  }
+  #titreResto h1
+  {
+    font-size: 2em;
+    margin-left: -20px;
+  }
+  #titreResto i
+  {
+    font-size: 25px;
   }
 }

@@ -25,6 +25,7 @@ header
 }
 #title img
 {
+  width: 295px;
   margin: 20px 0;
 }
 #search
@@ -38,7 +39,6 @@ header
 }
 form /*MENU DE RECHERCHE*/
 {
-  width: 37%;
   display: flex;
   justify-content: center;
 }
@@ -60,11 +60,11 @@ label a
 }
 input
 {
-  width: 250px;
+  width: 230px;
   background: #e7e7e7;
   border: none;
   height: 45px;
-  margin: auto 30px;
+  margin: auto 7px;
   font-size: 25px;
   font-weight: bold;
 }
@@ -76,31 +76,32 @@ button
 #slogH/*SLOGAN*/
 {
   margin: 75px 50px 0 50px;
-  font-size: 60px;
+  font-size: 35px;
   text-align: center;
 }
 #slogP
 {
   margin: 0 40px 50px 40px;
-  font-size: 35px; 
+  font-size: 20px; 
   text-align: center;
 }
 #slogA
 {
-  font-size: 25px;
+  font-size: 19px;
   color: #fff;
   text-decoration: none;
   padding: 15px 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 35px;
-  box-shadow: #99E2D0 1px 2px 4px;
+  box-shadow: #b8b8b8 1px 2px 4px;
   margin-bottom: 75px;
-  transition: transform 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 #slogA:hover
 {
   background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: #85f3d7 1px 2px 4px;
+  opacity: 0.5;
+  box-shadow: #a8a8a8 2px 3px 8px;
 }
 #how /*SECTION MODE D'EMPLOI*/
 {
@@ -134,9 +135,10 @@ button
 .list
 {
   margin: 0;
+  background: #f3f3f3;
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 22px;
   box-shadow: #f0f0f0 1px 2px 9px;
   transition: all 0.3s ease-out;
 }
@@ -175,7 +177,9 @@ button
 main /*SECTION RESTAURANTS*/
 {
   width: 100%;
+  padding-top: 19px;
   margin-top: 70px;
+  background: #f3f3f3;
 }
 /*#resto 
 {
@@ -254,7 +258,7 @@ footer /*SECTION FOOTER*/
   font-family: 'Shrikhand', cursive;
   text-align: center;
   color: #fff;
-  font-size: 50px;
+  font-size: 30px;
   margin: 15px 0;
 }
 #figcpt
@@ -328,6 +332,10 @@ footer /*SECTION FOOTER*/
     flex-direction: row;
     justify-content: space-between;
   }
+  .description i
+  {
+    font-size: 40px;
+  }
   .lieu
   {
     margin-left: 10px;
@@ -340,17 +348,47 @@ footer /*SECTION FOOTER*/
   {
     font-size: 45px;
   }
-  .description h3
+  .description h3, .description p
   {
+    font-size: 23px;
     padding-left: 15px;
+    margin: 5px 0;
   }
-  .description p
+  /* /* .description p
   {
+    font-size: 23px;
     padding-left: 15px;
-  }
+  } */
 }
 @media (max-width: 911px)
 {
+  #how
+  {
+    width: 95%;
+  }
+  #titleFunction
+  {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .list
+  {
+    width: 100%;
+  }
+  .list i 
+  {
+    margin-left: 60px;
+    font-size: 25px;
+  }
+  .list figcaption
+  {
+    margin-left: 130px;
+    font-size: 20px;
+  }
+  #resto h2
+  {
+    justify-content: flex-start;
+  }
   #foot
   {
     width: 95%;
@@ -370,5 +408,22 @@ footer /*SECTION FOOTER*/
   #figcpt a
   {
     margin: 10px 0;
+  }
+}
+@media (max-width: 600px)
+{
+  .list
+  {
+    width: 100%;
+  }
+  .list i 
+  {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .list figcaption
+  {
+    margin-left: 20px;
+    font-size: 20px;
   }
 }
