@@ -129,26 +129,36 @@ main /*Corps de page*/
   overflow: hidden;
   position: relative;
 }
-.titreMenu:nth-child(1)
+.blocMenu
 {
+  /* oj */
+  overflow: hidden;
+  /* position: relative; */
   animation: fadein 1s linear forwards;
-  opacity: 0;
 }
-.titreMenu:nth-child(2)
+.titrePlat .plat:nth-child(1)
 {
-  animation: fadein 1.5s linear forwards;
-  opacity: 0;
+  /* animation: fadein 1s linear forwards; */
+  animation-delay: 0.3s;
+  
 }
-.titreMenu:nth-child(3)
+.blocMenu, .titrePlat:nth-child(2)
 {
-  animation: fadein 2s linear forwards;
-  opacity: 0;
+  /* animation: fadein 1s linear forwards; */
+  animation-delay: 0.6s;
+  
+}
+.blocMenu, .titrePlat:nth-child(3)
+{
+  /* animation: fadein 1s linear forwards; */
+  animation-delay: 0.9s;
+  
 }
 @keyframes fadein 
 {
   0%
   {
-    transform: translate(30%);
+    transform: translateY(5%);
     opacity: 0;
   }
   100%
@@ -195,6 +205,63 @@ main /*Corps de page*/
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+}
+.slide
+{
+  width: 0;
+  height: 100%;
+  position: relative;
+  left: 10px;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  
+}
+.plat:hover .slide 
+{
+  animation: slide-left 1s ease-in-out both;
+  -webkit-animation: slide-left 1s ease-in-out both;
+}
+@keyframes slide-left
+{
+  0%
+  {
+    transform: scaleX(0, 100%);
+    -webkit-transform: scaleX(0, 100%);
+  }
+  100% 
+  {
+    width: 80px;
+    transform: scale(100%, 100%) ;
+    -webkit-transform: scaleX(100%, 100%);
+  }
+}
+.slide i
+{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 25px;
+  color: rgb(250, 8, 8);
+  margin: 10px 10px;
+  opacity: 1;
+}
+.plat:hover .slide i
+{
+  opacity: 1;
+  animation: around 0.7s linear;
+  animation-delay: 00.3s;
+}
+@keyframes around 
+{
+  0%
+  {
+    transform: rotate(0);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
 }
 
 #command

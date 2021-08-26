@@ -1,3 +1,37 @@
+#loader
+{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 20px solid #000;
+  border-top: 20px solid #1177FF;
+  border-radius: 50%;
+  animation: spin 1.5s linear both ;
+}
+#loading
+{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(50%, 50%); 
+}
+@keyframes spin 
+{
+  0% 
+  { 
+    transform: rotate(0deg);
+  }
+  100% 
+  {
+    transform: rotate(360deg);
+    
+  }
+  
+}
 body
 {
   font-family: 'Roboto', sans-serif;
