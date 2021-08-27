@@ -84,12 +84,12 @@ main /*Corps de page*/
 {
   font-family: 'Shrikhand', cursive;
   font-weight: 500;
-  font-size: 5em;
+  font-size: 4em;
   margin: 0;
 }
 #titreResto i
 {
-  font-size: 55px;
+  font-size: 4em;
 }
 #titreResto .fa-heart
 {
@@ -333,9 +333,14 @@ footer /*SECTION FOOTER*/
 {
   #titreResto h1
   {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-left: -13px;
   }
+  #titreResto i
+  {
+    font-size: 3em;
+  }
+
 }
 @media (max-width: 1000px)
 {

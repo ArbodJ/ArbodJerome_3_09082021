@@ -10,7 +10,7 @@
   border: 20px solid #000;
   border-top: 20px solid #1177FF;
   border-radius: 50%;
-  animation: spin 1.5s linear both ;
+  animation: spin 2.5s linear both ;
 }
 #loading
 {
@@ -25,10 +25,14 @@
   { 
     transform: rotate(0deg);
   }
-  100% 
+  95% 
   {
     transform: rotate(360deg);
     
+  }
+  100%
+  {
+    opacity: 0;
   }
   
 }
@@ -250,17 +254,36 @@ main /*SECTION RESTAURANTS*/
   border-radius: 15px;
   box-shadow: #b8b8b8 1px 2px 4px;
 }
+#resto #new 
+{
+  position: relative;
+}
+#resto #new::before 
+{
+  content: "Nouveau";
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #50a791;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1em;
+  padding: 0.4em 0.65em;
+  border-radius: 4px;
+
+}
 .image img
 {
-  flex: 1 42%;
+  flex: 1 28%;
   height: 200px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
-  
 }
+
 .description
 {
-  flex: 1 30%;
+  flex: 0 45%;
   display: flex;
   color: #000;
   flex-direction: column;
