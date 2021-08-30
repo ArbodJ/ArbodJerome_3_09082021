@@ -1,6 +1,6 @@
 #loader
 {
-  width: 99%;
+  width: 98%;
   height: auto;
   margin: auto;
   position: absolute;
@@ -12,7 +12,7 @@
   background: black;
   border: blue 1px solid;
   font-family: 'Shrikhand', cursive;
-  animation: load 1.5s linear 3s both;
+  animation: load 1s linear 4.5s both;
 }
 @keyframes load 
 {
@@ -23,19 +23,17 @@
   100%
   {
     opacity: 0;
-    display: none;
   }
 }
 #loading
 {
   position: relative;
-  margin: 20% auto;
-  top: -185px;
+  top: 130px;
   right: 0;
   bottom: 0;
   left: 0;
   font-family: 'Shrikhand', cursive;
-  font-size: 90px;
+  font-size: 100px;
   text-align: center;
   text-shadow:  0px 1px 5px #99E2D0;
 }
@@ -85,33 +83,14 @@
 }
 #loading2
 {
-  display: flex;
-  justify-content: center;
-  margin-top: -450px;
-  font-size: 25px;
-}
-.loading1
-{
-  color: #9356DC;
-  animation: choix 2s linear infinite both;
-}
-.loading2
-{
-  color: #FF79DA;
-  margin: 0 25px;
-  animation: click 2s linear 0.5s infinite both;
-}
-.loading3
-{
-  color: #99E2D0;
-  animation: mange 2s linear 1s infinite both;
-}
-#loading3
-{
   color: #fff;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  position: relative;
+  top: 220px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .c1
 {
@@ -577,14 +556,13 @@ footer /*SECTION FOOTER*/
     padding-left: 15px;
     margin: 5px 0;
   }
-  /* /* .description p
-  {
-    font-size: 23px;
-    padding-left: 15px;
-  } */
 }
 @media (max-width: 911px)
 {
+  #loading
+  {
+    font-size: 70px;
+  }
   #how
   {
     width: 95%;
@@ -635,6 +613,14 @@ footer /*SECTION FOOTER*/
 }
 @media (max-width: 600px)
 {
+  #loading
+  {
+    font-size: 33px;
+  }
+  #loading2
+  {
+    font-size: 12px;
+  }
   .list
   {
     width: 100%;
