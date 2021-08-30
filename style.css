@@ -22,6 +22,7 @@
   }
   100%
   {
+    transform: scale(0);
     opacity: 0;
   }
 }
@@ -423,23 +424,32 @@ main /*SECTION RESTAURANTS*/
   align-items: center;
   justify-content: space-evenly;
 }
-.fas .fa-heart
+.like
 {
-  background-clip: text;
-  color: linear-gradient(#FF79DA, #9356DC);
- font-weight: 100;
+  display: flex;
 }
-.description i
+.coeur1
 {
-  font-size: 70px;
-  background-clip: text;
-  /* color: #fff; */
-  background: #fff;
-  
+  font-size: 45px;
+  color: black;
+  position: relative;
+  font-weight: 100;
 }
-.description .fas:hover
+.coeur2
 {
-  fill: #FF79DA;
+  font-size: 46px;
+  display: inline-block;
+  background: radial-gradient(pink, red);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: -45px;
+  transform: scale(0);
+  transition: transform 0.5s linear;
+}
+.coeur1:hover+ .coeur2
+{
+  transform: scale(1);
 }
 footer /*SECTION FOOTER*/
 {
