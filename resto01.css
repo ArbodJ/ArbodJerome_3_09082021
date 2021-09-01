@@ -149,7 +149,7 @@ main /*Corps de page*/
   border-radius: 10px;
   box-shadow: #b8b8b8 2px 2px 4px;
   margin: 20px 0;
-  padding: 0 10px;
+  padding-left: 10px;
   transition: 0.3s;
   position: relative;
 }
@@ -219,18 +219,16 @@ main /*Corps de page*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  overflow: hidden;
 }
-
 .plat h4
 {
   margin: 5px 0;
-  
+
 }
 .plat p
 {
   margin: 5px 0;
-  
 }
 .menuPlat
 {
@@ -250,66 +248,41 @@ main /*Corps de page*/
   flex-direction: row;
   align-items: flex-end;
 }
-.slide
+.confirmation
 {
-  width: 0;
-  height: 100%;
-  position: relative;
-  left: 10px;
   background-color: #99E2D0;
+  margin: 0 -75px 0 10px;
+  width: 75px;
   border-radius: 0 10px 10px 0;
-  overflow: hidden;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.9s;
 }
-.plat:hover .slide 
+.icon-anim
 {
-  animation: slide-left 1s ease-in-out 1 both;
-  /* -webkit-animation: slide-left 1s ease-in-out 1 alternate; */
-}
-@keyframes slide-left
-{
-  0%
-  {
-    transform: scaleX(0, 100%);
-    -webkit-transform: scaleX(0, 100%);
-  }
-  100% 
-  {
-    width: 80px;
-    transform: scale(100%, 100%);
-    -webkit-transform: scaleX(100%, 100%);
-  }
-}
-.slide i
-{
-  position: absolute;
-  top: 5px;
-  left: 15px;
   font-size: 25px;
   background-clip: text;
-  -webkit-background-clip: text;
+  background: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.9s;
+}
+.item
+{
   color: #fff;
-  margin: 10px 10px;
-  opacity: 1;
 }
-.plat:hover .slide i
+.plat:hover .confirmation
 {
-  opacity: 1;
-  animation: around 0.7s linear;
-  animation-delay: 00.3s;
+  margin-right: 0;
 }
-@keyframes around 
+.plat:hover .icon-anim
 {
-  0%
-  {
-    transform: rotate(0);
-  }
-  100%
-  {
-    transform: rotate(360deg);
-  }
+  transform: rotate(0);
 }
-
 #command
 {
   display: flex;
