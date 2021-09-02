@@ -1,4 +1,4 @@
-/* #loader
+#loader
 {
   content: "";
   width: 100%;
@@ -167,7 +167,7 @@
   {
     opacity: 0;
   }
-} */
+}
 body
 {
   font-family: 'Roboto', sans-serif;
@@ -178,7 +178,7 @@ body
 {
   animation: corps 1.3s linear 4.4s both;
 }
-/* @keyframes corps
+@keyframes corps
 {
   0%
   {
@@ -190,7 +190,7 @@ body
     opacity: 1;
     transform: scale(1);
   }
-} */
+}
 
 header
 {
@@ -366,6 +366,7 @@ main /*SECTION RESTAURANTS*/
 {
   width: 100%;
   padding-top: 1px;
+  padding-bottom: 35px;
   margin-top: 70px;
   margin-bottom: 35px;
   background: #f3f3f3;
@@ -477,20 +478,33 @@ main /*SECTION RESTAURANTS*/
   font-weight: 900;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation: animationHeart 0.5s linear;
-  animation: animationHeart 0.5s linear;
+  -webkit-animation: animationHeart 0.9s ease-in-out;
+  animation: animationHeart 0.9s ease-in-out;
 }
 @keyframes animationHeart 
 {
   0%
   {
-    transform: scale(0);
-    -webkit-transform: scale(0);
+    /* transform: scale(0); */
+    background-size: 0% 0%;
   }
   100%
   {
-    transform: scale(1);
-    -webkit-transform: scale(1);
+    /* transform: scale(1); */
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes animationHeart 
+{
+  0%
+  {
+    /* transform: scale(0); */
+    background-size: 0% 0%;
+  }
+  100%
+  {
+    /* transform: scale(1); */
+    background-size: 100% 100%;
   }
 }
 footer /*SECTION FOOTER*/
@@ -547,6 +561,10 @@ footer /*SECTION FOOTER*/
   {
     font-size: 20px;
   }
+  main
+  {
+    margin-bottom: 0;
+  }
   #resto /*SECTION RESTO*/
   {
     width: 95%;
@@ -562,8 +580,10 @@ footer /*SECTION FOOTER*/
   }
   .contentResto
   {
+    display: flex;
     height: 360px;
-    margin: 0;
+    margin-left: 3%;
+    justify-content: center;
   }
   .imgResto
   {
@@ -597,7 +617,8 @@ footer /*SECTION FOOTER*/
   }
   .like
   {
-    margin-right: 60px;
+    top: 247px;
+    left: -70px;
   }
   .like i
   {
