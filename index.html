@@ -8,192 +8,123 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>ohmyfood</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div id="loader">
-      <div id="loading">
-        <label class="l1">o</label>
-        <label class="l2">h</label>
-        <label class="l3">m</label>
-        <label class="l4">y</label>
-        <label class="l5">f</label>
-        <label class="l6">o</label>
-        <label class="l7">o</label>
-        <label class="l8">d</label>
+    <header>
+      <div id="title">
+        <img id="food" src="images/logo/ohmyfood.png" alt="title" />
       </div>
-      <div id="loading2">
-        <label for="" class="c1">c</label>
-        <label for="" class="c2">h</label>
-        <label for="" class="c3">a</label>
-        <label for="" class="c4">r</label>
-        <label for="" class="c5">g</label>
-        <label for="" class="c6">e</label>
-        <label for="" class="c7">m</label>
-        <label for="" class="c8">e</label>
-        <label for="" class="c9">n</label>
-        <label for="" class="c10">t</label>
-        <label for="" class="c11">.</label>
-        <label for="" class="c12">.</label>
-        <label for="" class="c13">.</label>
+      <div id="generality">
+        <form action="">
+          <label for=""><a href="https://www.googlemaps.com"><i class="fas fa-map-marker-alt"></i></a></label>
+          <input type="text" placeholder="Paris, Belleville">
+              <!--<button type="submit"></button>-->
+        </form>
+          <h1 id="slogH">Reservez le menu qui vous convient</h1>
+          <p id="slogP">Decouvrez des restaurants d'exception, séléctionnes par nos sions.</p>
+          <a id="slogA" href="">Explorer nos restaurants</a>
       </div>
-    </div> 
-      <div id="page">
-        
-        <header>
-          <div id="title">
-            <img src="images/logo/ohmyfood.png" alt="omf">
-          </div>
-          <div id="generality">
-            <article id="search">
-              <form action="">
-                <label for=""><a href="https://www.googlemaps.com"><i class="fas fa-map-marker-alt"></i></a></label>
-                <input type="text" placeholder="Paris, Belleville">
-              </form>
-            </article>
-            
-            <h1 id="slogH">Réservez le menu qui vous convient</h1>
-            <p id="slogP">Découvrez des restaurants d'éxception, séléctionnés par nos soins.</p>
-            <a id="slogA" href="#linkFood">Explorer nos restaurants</a>
-          </div>
+      <section id="how">
+        <div id="titleFunction">
+          <h1>Fonctionnement</h1>
+        </div>
+        <div id="read">   
+          <a class="linkhow" href="">
+            <figure class="list">
+              <p class="number">1</p>
+              <i class="fas fa-mobile-alt"></i>
+                <figcaption>
+                  Choisissez un restaurant
+                </figcaption>
+            </figure>
+          </a>
+          <a class="linkhow" href="">
+            <figure class="list">
+              <p class="number">2</p>
+              <i class="fas fa-list-ul"></i>
+                <figcaption>
+                  Composez votre menu
+                </figcaption>
+            </figure>
+          </a>
+          <a class="linkhow" href="">
+            <figure class="list">
+              <p class="number">3</p>
+              <i class="fas fa-store"></i>
+                <figcaption>
+                  Dégustez au restaurant
+                </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </header>
 
-          <section id="how">
-            <div id="titleFunction">
-              <h2>Fonctionnement</h2>
-            </div>
-            <div id="read">   
-              <a class="linkhow" href="">
-                <figure class="list">
-                  <p class="number">1</p>
-                  <i class="fas fa-mobile-alt"></i>
-                  <figcaption>
-                    Choisissez un restaurant
-                  </figcaption>
-                </figure>
-              </a>
-              <a class="linkhow" href="">
-                <figure class="list">
-                  <p class="number">2</p>
-                  <i class="fas fa-list-ul"></i>
-                  <figcaption>
-                    Composez votre menu
-                  </figcaption>
-                </figure>
-              </a>
-              <a class="linkhow" href="">
-                <figure class="list">
-                  <p class="number">3</p>
-                  <i class="fas fa-store"></i>
-                  <figcaption>
-                    Dégustez au restaurant
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </section>
-        </header>
-        <main>
-          <section id="resto">
-            <div>
-              <h2 id="linkFood">Restaurants</h2>
-            </div>
-            <div class="photo">
-              <article class="contentResto">
-                <a class="imgResto" href="omf01.html">
-                  <figure class="image">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
-                    <span class="new">Nouveau</span>
-                    <figcaption class="description">
-                      <div class="lieu">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                      </div>
-                      
-                    </figcaption>
-                  </figure>
-                </a>
-                <div class="like">
-                  <i class="far fa-heart fa-2x"></i>
-                  <i class="fas ft fa-heart fa-2x "></i>
-                </div>
-              </article>
-              <article class="contentResto">
-                <a class="imgResto" href="omf02.html">
-                  <figure class="image">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
-                    <span class="new">Nouveau</span>
-                    <figcaption class="description">
-                      <div class="lieu">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </a>
-                <div class="like">
-                  <i class="far fa-heart fa-2x"></i>
-                  <i class="fas ft fa-heart fa-2x "></i>
-                </div>
-              </article>
-              <article class="contentResto">
-                <a class="imgResto" href="omf03.html">
-                  <figure class="image">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
-                    <figcaption class="description">
-                      <div class="lieu">
-                        <h3>À la française</h3>
-                        <p>Cité rouge</p>
-                      </div>
-                      <div class="like">
-                        <i class="far fa-heart coeur1"></i>
-                        <i class="fas fa-heart coeur2"></i>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </a>
-                <div class="like">
-                  <i class="far fa-heart fa-2x"></i>
-                  <i class="fas ft fa-heart fa-2x "></i>
-                </div>
-              </article>
-              <article class="contentResto">
-                <a class="imgResto" href="omf04.html">
-                  <figure class="image">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
-                    <figcaption class="description">
-                      <div class="lieu">
-                        <h3> Le délices des sens</h3>
-                        <p>Folie-Méricourt</p>
-                      </div>
-                      
-                    </figcaption>
-                  </figure>
-                </a>
-                <div class="like">
-                  <i class="far fa-heart fa-2x"></i>
-                  <i class="fas ft fa-heart fa-2x "></i>
-                </div>
-              </article>
-            </div>
-          </section>
-        </main>
-        <footer>
-          <div id="foot">
-            <section id="figFoot">
-              <p>ohmyfood</p>
-              <div id="figcpt">
-                <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-                <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-                <a href="#">Mention legales</a>
-                <a href="mailto:contact@omf.com">Contact</a>
-              </div>
-            </section>
-          </div>
-        </footer>
+    <main>
+      <section id="resto">
+        <div>
+          <h1>Restaurants</h1>
+        </div>
+        <div class="photo">
+          <a class="imgResto" href="omf01.html">
+          <figure class="image">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
+            <figcaption class="description">
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+              <i class="far fa-heart"></i>
+            </figcaption>
+            </figure>
+          </a>
+          <a class="imgResto" href="#">
+            <figure class="image">
+              <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
+              <figcaption class="description">
+                <h3>La note echantée</h3>
+                <p>Charonne</p>
+                <i class="far fa-heart"></i>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="imgResto" href="#">
+            <figure class="image">
+              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+              <figcaption class="description">
+                <h3>A la française</h3>
+                <p>Cité rouge</p>
+                <i class="far fa-heart"></i>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="imgResto" href="#">
+            <figure class="image">
+              <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
+              <figcaption class="description">
+                <h3> Le délices des sens</h3>
+                <p>Ménilmontant</p>
+                <i class="far fa-heart"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="foot">
+        <figure id="figFoot">
+          <img src="images/logo/ohmyfood1.png" alt="title" />
+          <figcaption id="figcpt">
+            <a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+            <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+            <a href="">Mention legales</a>
+            <a href="">Contact</a>
+          </figcaption>
+        </figure>
       </div>
-         
+    </footer>
   </body>
 </html>
