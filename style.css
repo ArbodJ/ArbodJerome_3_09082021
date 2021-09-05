@@ -79,7 +79,7 @@
   100%
   {
     color: #9356DC; 
-    text-shadow: #99E2D0 5 5 15px;
+    text-shadow: #99E2D0 5px 5px 15px;
   }
 }
 #loading2
@@ -452,7 +452,7 @@ main /*SECTION RESTAURANTS*/
 }
 .fa-2x
 {
-  font-weight: 100%;
+  font-weight: 100;
 }
 .far .fa-heart
 {
