@@ -386,7 +386,7 @@ main /*SECTION RESTAURANTS*/
 .photo
 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .contentResto
 {
@@ -399,6 +399,7 @@ main /*SECTION RESTAURANTS*/
   margin: 0;
   display: flex;
   flex: 0 90%;
+  color: #000;
   text-decoration: none;
 }
 .image
@@ -439,17 +440,21 @@ main /*SECTION RESTAURANTS*/
   align-items: center;
   justify-content: space-between;
 }
-
+.lieu
+{
+  display: flex;
+  flex-direction: column;
+}
 .like
 {
   display: flex;
   height: 1em;
   cursor: pointer;
   position: relative;
-  top: 200px;
-  right: 0px;
+  top: 0;
+  right: 0;
   bottom: 0;
-  left: -60px;
+  left: -20px;
 }
 .fa-2x
 {
@@ -612,14 +617,10 @@ footer /*SECTION FOOTER*/
   {
     font-size: 40px;
   }
-  .lieu
-  {
-    margin-left: 10px;
-  }
   .like
   {
-    top: 247px;
-    left: -70px;
+    top: 0;
+    left: -25px;
   }
   .like i
   {
@@ -629,7 +630,7 @@ footer /*SECTION FOOTER*/
   {
     font-size: 23px;
     padding-left: 15px;
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
 @media (max-width: 911px)
@@ -721,14 +722,10 @@ footer /*SECTION FOOTER*/
   {
     margin: 0;
   }
-  .lieu
-  {
-    margin-left: 0;
-  }
-  .like
+  /* .like
   {
     margin-right: 15px;
-  }
+  } */
 }
 @media (max-width: 398px)
 {
