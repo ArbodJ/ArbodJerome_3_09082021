@@ -75,11 +75,12 @@
   0% 
   { 
     color: #FF79DA;
+    text-shadow: #99E2D0 2px 2px 9px;
   }
   100%
   {
     color: #9356DC; 
-    text-shadow: #99E2D0 5px 5px 15px;
+    text-shadow: #99E2D0 2px 2px 9px;
   }
 }
 #loading2
@@ -727,5 +728,115 @@ footer /*SECTION FOOTER*/
   .like
   {
     margin-right: 15px;
+  }
+}
+@media (max-width: 398px)
+{
+  #title img
+  {
+    width: 195px;
+  }
+  input
+  {
+    width: 115px;
+    font-size: 15px;
+  }
+  .fas.fa-map-marker-alt
+  {
+    width: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slogH
+  {
+    font-size: 25px;
+  }
+  #slogP
+  {
+    font-size: 15px;
+  }
+  #slogA
+  {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  #how h2 
+  {
+    font-size: 24px;
+  }
+  #read
+  {
+    width: 94%;
+  }
+  .number
+  {
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px 15px -8px;
+  }
+  .list i 
+  {
+    margin: 0 5px;
+    font-size: 17px;
+  }
+  .list figcaption
+  {
+    margin-left: 4px;
+    font-size: 9px;
+  }
+  main 
+  {
+    width: 190px;
+  }
+  #resto
+  {
+    width: 100%;
+  }
+  #resto h2 
+  {
+    font-size: 24px;
+  }
+  .contentResto
+  {
+    width: 190px;
+  }
+  .imgResto
+  {
+    width: 190px;
+  }
+  .image
+  {
+    width: 190px;
+  }
+  .image img 
+  {
+    width: 190px;
+  }
+  .photo
+  {
+    width: 100%;
+  }
+  .lieu
+  {
+    margin: 0;
+  }
+  .description h3  
+  {
+    font-size: 9px;
+  }
+  .description p 
+  {
+    font-size: 9px;
+  }
+  .like i 
+  {
+    font-size: 24px;
+  }
+  .like
+  {
+    top: 274px;
+    left: -45px;
   }
 }
