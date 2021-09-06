@@ -157,14 +157,6 @@ main /*Corps de page*/
     background-size: 100% 100%;
   }
 }
-/* #titreResto i
-{
-  font-size: 4em;
-}
-#titreResto .fa-heart
-{
-  stroke-width: 1px;
-} */
 #bloc
 {
   display: flex;
@@ -523,5 +515,36 @@ footer /*SECTION FOOTER*/
   #titreResto i
   {
     font-size: 25px;
+  }
+}
+@media (max-width: 398px)
+{
+  #title img 
+  {
+    width: 195px;
+  }
+  #title i 
+  {
+    font-size: 17px;
+  }
+  #titreResto h1 
+  {
+    font-size: 1.1em;
+  }
+  .like
+  {
+    left: 0;
+  }
+  .menuPlat h4 
+  {
+    font-size: 9px;
+  }
+  .menuPlat p 
+  {
+    font-size: 9px;
+  }
+  #command a
+  {
+    font-size: 12px;
   }
 }
