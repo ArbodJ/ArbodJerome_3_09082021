@@ -44,7 +44,7 @@ main /*Corps de page*/
 }
 #master
 {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 25px auto;
@@ -519,15 +519,15 @@ footer /*SECTION FOOTER*/
 }
 @media (max-width: 398px)
 {
-  #title img 
+  #title img /*header*/
   {
-    width: 195px;
+    width: 160px;
   }
   #title i 
   {
-    font-size: 17px;
+    font-size: 15px;
   }
-  #titreResto h1 
+  #titreResto h1 /*main*/
   {
     font-size: 1.1em;
   }
@@ -537,14 +537,24 @@ footer /*SECTION FOOTER*/
   }
   .menuPlat h4 
   {
+    letter-spacing: 0;
     font-size: 9px;
   }
   .menuPlat p 
   {
+    letter-spacing: 0;
     font-size: 9px;
+  }
+  .prixPlat p 
+  {
+    font-size: 13px;
   }
   #command a
   {
     font-size: 12px;
+  }
+  #figFoot p /*footer*/
+  {
+    font-size: 30px;
   }
 }

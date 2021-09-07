@@ -731,7 +731,7 @@ footer /*SECTION FOOTER*/
 {
   #title img
   {
-    width: 195px;
+    width: 185px;
   }
   input
   {
@@ -763,10 +763,6 @@ footer /*SECTION FOOTER*/
   {
     font-size: 24px;
   }
-  #read
-  {
-    width: 94%;
-  }
   .number
   {
     width: 20px;
@@ -785,7 +781,7 @@ footer /*SECTION FOOTER*/
   }
   main 
   {
-    width: 190px;
+    width: 99%;
   }
   #resto
   {
@@ -797,23 +793,15 @@ footer /*SECTION FOOTER*/
   }
   .contentResto
   {
-    width: 190px;
-  }
-  .imgResto
-  {
-    width: 190px;
-  }
-  .image
-  {
-    width: 190px;
+    width: 95%;
   }
   .image img 
   {
-    width: 190px;
-  }
-  .photo
-  {
     width: 100%;
+  }
+  .image
+  {
+    height: auto;
   }
   .lieu
   {
@@ -833,7 +821,15 @@ footer /*SECTION FOOTER*/
   }
   .like
   {
-    top: 274px;
-    left: -45px;
+    top: 0;
+    left: -10px;
+  }
+  #foot
+  {
+    width: 100%;
+  }
+  .figcpt a 
+  {
+    font-size: 12px;
   }
 }
