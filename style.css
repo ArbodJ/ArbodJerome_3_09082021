@@ -75,11 +75,12 @@
   0% 
   { 
     color: #FF79DA;
+    text-shadow: #99E2D0 2px 2px 9px;
   }
   100%
   {
     color: #9356DC; 
-    text-shadow: #99E2D0 5px 5px 15px;
+    text-shadow: #99E2D0 2px 2px 9px;
   }
 }
 #loading2
@@ -385,7 +386,7 @@ main /*SECTION RESTAURANTS*/
 .photo
 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .contentResto
 {
@@ -398,6 +399,7 @@ main /*SECTION RESTAURANTS*/
   margin: 0;
   display: flex;
   flex: 0 90%;
+  color: #000;
   text-decoration: none;
 }
 .image
@@ -438,17 +440,21 @@ main /*SECTION RESTAURANTS*/
   align-items: center;
   justify-content: space-between;
 }
-
+.lieu
+{
+  display: flex;
+  flex-direction: column;
+}
 .like
 {
   display: flex;
   height: 1em;
   cursor: pointer;
   position: relative;
-  top: 200px;
-  right: 0px;
+  top: 0;
+  right: 0;
   bottom: 0;
-  left: -60px;
+  left: -20px;
 }
 .fa-2x
 {
@@ -611,14 +617,10 @@ footer /*SECTION FOOTER*/
   {
     font-size: 40px;
   }
-  .lieu
-  {
-    margin-left: 10px;
-  }
   .like
   {
-    top: 247px;
-    left: -70px;
+    top: 0;
+    left: -25px;
   }
   .like i
   {
@@ -628,7 +630,7 @@ footer /*SECTION FOOTER*/
   {
     font-size: 23px;
     padding-left: 15px;
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
 @media (max-width: 911px)
@@ -720,12 +722,114 @@ footer /*SECTION FOOTER*/
   {
     margin: 0;
   }
+  /* .like
+  {
+    margin-right: 15px;
+  } */
+}
+@media (max-width: 398px)
+{
+  #title img
+  {
+    width: 185px;
+  }
+  input
+  {
+    width: 115px;
+    font-size: 15px;
+  }
+  .fas.fa-map-marker-alt
+  {
+    width: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slogH
+  {
+    font-size: 25px;
+  }
+  #slogP
+  {
+    font-size: 15px;
+  }
+  #slogA
+  {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  #how h2 
+  {
+    font-size: 24px;
+  }
+  .number
+  {
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px 15px -8px;
+  }
+  .list i 
+  {
+    margin: 0 5px;
+    font-size: 17px;
+  }
+  .list figcaption
+  {
+    margin-left: 4px;
+    font-size: 9px;
+  }
+  main 
+  {
+    width: 99%;
+  }
+  #resto
+  {
+    width: 100%;
+  }
+  #resto h2 
+  {
+    font-size: 24px;
+  }
+  .contentResto
+  {
+    width: 95%;
+  }
+  .image img 
+  {
+    width: 100%;
+  }
+  .image
+  {
+    height: auto;
+  }
   .lieu
   {
-    margin-left: 0;
+    margin: 0;
+  }
+  .description h3  
+  {
+    font-size: 9px;
+  }
+  .description p 
+  {
+    font-size: 9px;
+  }
+  .like i 
+  {
+    font-size: 24px;
   }
   .like
   {
-    margin-right: 15px;
+    top: 0;
+    left: -10px;
+  }
+  #foot
+  {
+    width: 100%;
+  }
+  .figcpt a 
+  {
+    font-size: 12px;
   }
 }
