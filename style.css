@@ -776,8 +776,8 @@ footer /*SECTION FOOTER*/
   }
   .list figcaption
   {
-    margin-left: 4px;
-    font-size: 9px;
+    margin-left: 10px;
+    font-size: 19px;
   }
   main 
   {
@@ -789,6 +789,7 @@ footer /*SECTION FOOTER*/
   }
   #resto h2 
   {
+    margin-left: 12px;
     font-size: 24px;
   }
   .contentResto
@@ -809,15 +810,15 @@ footer /*SECTION FOOTER*/
   }
   .description h3  
   {
-    font-size: 9px;
+    font-size: 20px;
   }
   .description p 
   {
-    font-size: 9px;
+    font-size: 20px;
   }
   .like i 
   {
-    font-size: 24px;
+    font-size: 30px;
   }
   .like
   {
@@ -827,6 +828,11 @@ footer /*SECTION FOOTER*/
   #foot
   {
     width: 100%;
+  }
+  #figFoot
+  {
+    width: 95%;
+    margin: 0 auto;
   }
   .figcpt a 
   {
