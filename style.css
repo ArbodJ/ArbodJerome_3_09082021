@@ -549,6 +549,11 @@ footer /*SECTION FOOTER*/
 {
   margin-right: 5px;
 }
+i.fas.fa-hands-helping
+{
+  font-size: 12px;
+  transform: rotate(345deg);
+}
 /*RESPONSIV*/
 @media (max-width: 1230px)
 {
